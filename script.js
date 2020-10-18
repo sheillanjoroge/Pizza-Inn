@@ -178,7 +178,7 @@ $(document).ready(()=>{
         $('#small').prop('checked', false);
         $('#medium').prop('checked', false);
         $('#stuffed').prop('checked', false);
-        $('#glutten').prop('checked', false);
+        $('#chilly').prop('checked', false);
 
         var newPizza = new Pizza(selectedSize, selectedCrust, arr);
         allPizzas.push(newPizza);
