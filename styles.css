@@ -1,0 +1,141 @@
+.container-fluids{
+    background-image: url('../images/chef.2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 20%;
+    opacity: .5;  
+}
+.sexy-bg{
+    background-color: rgb(126, 122, 122);
+}
+.varieties{
+    font-size: 1.5em;
+}
+.collage{
+    width: 100%;
+    margin-top: 10%;
+}
+.slice img{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    animation: dance 1s infinite alternate;
+}
+.slice img, .pizza img, .pepperoni img, .olives img{
+    width: 18%;
+    animation: bounce  5s infinite alternate;
+}
+.cut img{
+    animation: dance 6s infinite alternate;
+}
+@keyframes dance{
+    from{
+        transform: translateX(-130px);
+    }
+    to{
+        transform: translateX(150px);
+    }
+}
+@keyframes bounce{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-105px);
+    }
+}
+.pizza img{
+    animation: swim 2s infinite alternate;
+}
+@keyframes swim{
+    from{
+        transform: translate3d(50px, 20px, -10px);
+    }
+    to{
+        transform: translate3d(0px, 0px, 20px)
+    }
+}
+.olives img{
+    width: 25%;
+}
+.pepperoni img{
+    margin-left: 60%;
+}
+.title img{
+    width: 40%;    
+}
+/* .btn-danger{
+    margin-top: 30%;
+    font-size: 2em;
+} */
+.about{
+    margin-top: 26%;
+    width: 100%;
+}
+
+.about-row{
+    width: 100%;
+}
+.about img{
+    width: 100%;
+}
+.about-text{
+    margin-top: 2%;
+}
+.mid-button a, .try-now a, .checkout-btn a, .timer-img a{
+    color: white;
+    text-decoration: none;
+}
+.try-now{
+    font-size: 1.5em;
+}
+
+.mid-button a:hover, .try-now a:hover, .checkout-btn a:hover, .timer-img a:hover{
+     color:white; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+@media screen and (min-width: 300px) and (max-width: 400px){
+    .learn-more{
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 500px){
+    .container-fluids{
+        background-image: url('../images/pizzabg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;  
+        height: 20%;
+        opacity: .5;  
+    }
+    .olives{
+        width: 100%;
+        margin-top: 0%;
+    }
+    .olives img{
+        width: 18%;
+    }
+    .pepperoni img{
+        margin-left: 30%;
+        width: 11%;
+    }
+    .title img{
+        width: 20%;
+        
+    }
+    .cut img{
+        width: 7%;
+        margin-top: 0%;
+    }
+    /* .btn-danger{
+        margin-top: 0%;
+        font-size: 2em;
+    } */
+    .about{
+        margin-top: 11%;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about-text{
+        margin-top: 10%;
+    }

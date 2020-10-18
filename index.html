@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Inn</title>
+<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css" type="text/css">
 <script src="./js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
@@ -22,10 +25,10 @@ crossorigin="anonymous"></script>
             <img class="offset-1" src="images/pizza.jpg" alt="Pizza topings">
         </div>
         <div class="type1">
-            <img class="offset-sm-4" src="images/pizza.jpg" alt="">
+            <img class="offset-sm-4" src="images/Image1.jpg" alt="">
         </div>
         <div class="mid-button offset-4 mt-5 offset-sm-5">
-           <a href="#about"> <button class="btn btn-success learn-more">Get to see varieties</a></button>
+           <a href="#about"> <button class="btn btn-success varieties">Get to see varieties</a></button>
         </div>
         <div class="type2">
             <div class="col">
@@ -34,7 +37,243 @@ crossorigin="anonymous"></script>
             <div class="col">
                 <img class="offset-2" src="images/type3.jpg" alt="">
             </div>
+        </div><div class="slice">
+            <img class=" offset-4 mb-sm-0" src="images/fork&knife.jpg" alt="">
         </div>
+    </div>
+</div>
+<div class="about" id="about">
+    <div class="row about-row">
+        <div class="col-12 col-sm">
+            <img src="images/chef.2.jpg" alt="">
+        </div>
+        <div class="col about-text offset-2 offset-sm-0">
+            <h3>
+                Pizza Inn, everybody's choice!! 
+            </h3>
+            <div class="row">
+                <div class="col offset-3 offset-sm-1 mt-3 try-now">
+                    <a href="#order-yours"><button class="btn btn-success order-now">Order Now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="order-yours" id="order-yours">
+        <p class="card">
+            Place your Order.
+        </p>
+    </div>
+    <div class="one mb-3">
+        <div class="one-title section-title pl-4 card">
+            1. Select size.
+        </div>
+        <div class="one-div mb-5">
+            <div class="size size">
+                <div class="row">
+                    <div class="col-12 pizza-img">
+                        <img src="images/Image1.jpg" alt="Pizza Size">
+                    </div>
+                </div>
+                <div class="row size-radios">
+                    <div class="col-4 size-radio">
+                        <input type="radio" id="small" name="size" value="small"> 
+                        <label for="small" class="size-labels">Small
+                        </label>                                                                                                                                                        
+                    </div>
+                    <div class="col-4 size-radio">
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="medium" class="size-labels">Medium
+                        </label>
+                    </div>
+                    <div class="col-4 size-radio">
+                        <input type="radio" id="large" name="size" value="large" checked>
+                        <label for="large" class="size-labels">Large    
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <button class="sendOne btn btn-success">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="two mb-3">
+        <div class="two-title section-title pl-4 card">
+            2. Select crust type.
+        </div>
+        <div class="two-div mb-5">
+            <div class="size size">
+                <div class="row">
+                    <div class="col-12 pizza-img">
+                        <img class="crispy-img" src="images/crusty.jpg" alt="Pizza Size">
+                        <img class="extracheese-img" src="images/extracheese.jpg" alt="Pizza Size">
+                        <img class="chilly-img" src="images/chilly.jpg" alt="Pizza Size">
+                    </div>
+                </div>
+                <div class="row crust-radios">
+                    <div class="col-4 crust-radio">
+                        <input class="crispy-io" type="radio" id="crisp" name="crust" checked value="crispy"> 
+                        <label for="crisp" class="crust-labels">Crispy
+                        </label>                                                                                                                                                        
+                    </div>
+                    <div class="col-4 crust-radio">
+                        <input class="stuffed-io" type="radio" id="stuffed" name="crust" value="stuffed">
+                        <label for="stuffed" class="crust-labels">Extra-Cheese
+                        </label>
+                    </div>
+                    <div class="col-4 crust-radio">
+                        <input class="chilly-io" type="radio" id="chilly" name="crust" value="chilly">
+                        <label for="chilly" class="crust-labels">Chilly    
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <button class="sendTwo btn btn-success">Next</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="three mb-3">
+        <div class="three-title section-title pl-4 card">
+            3. Toppings.
+        </div>
+        <div class="alert alert-danger mt-3 pl-5" role="alert">
+            <h4>Please select topping of your choice...Make more than one choice if you like.</h4> 
+          </div>
+        <div class="three-div mb-5">
+            <div class="row toppings mt-5">
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="extra-cheese" value="extraCheese">
+                    <label for="extra-cheese" class="extra-cheese-labels">Extra Cheese    
+                    </label>
+                </div>
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="bacon" value="bacon">
+                    <label for="bacon" class="baconlabels">Bacon    
+                    </label>
+                </div>
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="onions" value="onions">
+                    <label for="onions" class="onionslabels">Onions    
+                    </label>
+                </div>
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="pepperoni" value="pepperoni">
+                    <label for="pepperoni" class="pepperonilabels">Pepperoni    
+                    </label>
+                </div>
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="pineapples" value="pineapples">
+                    <label for="pineapples" class="pineapplelabels">Pineapples    
+                    </label>
+                </div>
+                <div class="col topping-checkbox">
+                    <input type="checkbox" class="toppingsClass" id="sausage" value="sausage">
+                    <label for="sausage" class="sausagelabels">Sausage    
+                    </label>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <button class="complete btn btn-success offset-5 mt-3">Complete</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="total mb-3">
+        <div class="total-title section-title pl-4 card">
+            4. Checkout
+        </div>
+        <div class="total-div">
+            <div class="row total-title">
+                <div class="col-1">
+                    #
+                </div>
+                <div class="col-2">
+                    Size
+                </div>  
+                <div class="col-2">
+                    Chilly
+                </div>
+                <div class="col-4">
+                    Toppings.
+                </div>
+                <div class="col-3">
+                    Total
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 howManyAdd">
+
+                </div>
+                <div class="col-2 sizeAdd">
+
+                </div>
+                <div class="col-2 crustAdd">
+
+                </div>
+                <div class="col-4 toppingsAdd">
+
+                </div>
+                <div class="col-3 totalAdd">
+
+                </div>
+            </div>
+            <div class="row mt-4 check-keep-div">
+                <div class="col checkout-btn">
+                    <a href="#delivery"><button class="checkout btn btn-success offset-3 mt-5">Checkout</a></button>
+                </div>
+                <div class="col">
+                    <button class="buyMore btn btn-success mr-2 mt-5">Print your Receipt and Continue Shopping</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="grand-div">
+            <div class="row">
+                <div class="col jumbotron mt-5">
+                </div>
+            </div>
+        </div>
+        
+        <div class="delivery" id="delivery">
+            <div class="form-row mt-4">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Address for Home Delivery">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <a href="#timer"><button class="homeDelivery btn btn-success offset-2 offset-sm-4 mt-5 timer-img"></a>Provide address for home delivery</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="cancel btn btn-danger offset-5 mt-3">Cancel</button>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <div class="row time">
+        <div class="col offset-1 offset-sm-3" id="timer" >
+            <p class="in-text"><strong>Your order is on transit!</strong></p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
 
 
 </body>    
