@@ -118,7 +118,7 @@ body{
         padding-bottom: 8px; 
         
     .title img{
-        width: 70%;   
+        width: 100%;   
     }
     .cut img{
         width: 7%;
@@ -133,7 +133,7 @@ body{
     .about-text{
         margin-top: 10%;
     }
-    @media screen and (min-width: 300px) and (max-width: 400px){
+    @media screen and (min-width: 300px) and (max-width: 900px){
         .pizza{
             font-size: 1.5em;
         }
