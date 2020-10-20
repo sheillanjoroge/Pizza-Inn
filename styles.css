@@ -1,34 +1,34 @@
 body{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-.container-fluids{
+.container-fluid{
     background-image: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
-    height: 20%;
-    opacity: .5;  
+    height: 2%;
+    opacity: .99;  
 }
 .title-bg{
     background-color: black;
 }
-.varieties{
+.title{
     font-size: 1.5em;
 }
-.collage{
+.pizza{
     width: 20%;
     margin-top: 10%;
 }
 .slice img{
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     animation: dance 1s infinite alternate;
 }
 .slice img, .crispy img, .extracheese img, .chilly img{
     width: 18%;
     animation: bounce  5s infinite alternate;
 }
-.cut img{
+.slice img{
     animation: dance 6s infinite alternate;
 }
 @keyframes dance{
@@ -68,12 +68,12 @@ body{
     width: 30%;    
 }
 .about{
-    margin-top: 26%;
+    margin-top: 7%;
     width: 100%;
 }
 
 .about-row{
-    width: 100%;
+    width: 100%; 
 }
 .about img{
     width: 100%;
@@ -113,13 +113,12 @@ body{
     .title{
         width: 100%;
         font-size: 1.7em;
-        background-color: black;
+        background-color: red;
         padding-top: 8px;
         padding-bottom: 8px; 
         
     .title img{
-        width: 70%;
-        
+        width: 70%;   
     }
     .cut img{
         width: 7%;
@@ -135,7 +134,7 @@ body{
         margin-top: 10%;
     }
     @media screen and (min-width: 300px) and (max-width: 400px){
-        .varieties{
+        .pizza{
             font-size: 1.5em;
         }
     }
