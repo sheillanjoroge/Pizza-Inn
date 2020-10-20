@@ -1,3 +1,5 @@
+
+//Backend Logic...
 function Pizza(size, crust, toppings){
     this.size = size;
     this.crust = crust;
@@ -5,35 +7,38 @@ function Pizza(size, crust, toppings){
 }
 
 Pizza.prototype.sizes = {
-    small: 500,
-    medium: 800,
-    large: 1000
+    small: 400,
+    medium: 600,
+    large: 900
 };
 Pizza.prototype.crusts = {
-  crispy: 200,
-  extraCheese: 250,
-  chilly: 300
+  crispy: 300,
+  stuffed: 200,
+  glutten: 200
 };
 Pizza.prototype.toppingsList = {
-  extraCheese: 200,
-  bacon: 200,
+  extraCheese: 100,
+  bacon: 100,
   onions: 100,
-  pepperoni: 200,
+  pepperoni: 100,
   pineapples: 100,
+  mushrooms: 100,
+  olives: 100,
   sausage: 150
 };
 
 Pizza.prototype.price = function(){
+    //Get the prices of the pizza size and crust...
   var crustPrice = this.crusts[this.crust];
   var sizePrice = this.sizes[this.size];
 
   var toppingsTotal = crustPrice + sizePrice;
 
-
+  //Finds price of items given the item and menu.
   var findPrice = function(topping, allToppings){
     return allToppings[topping];
   }
-  
+  //Get toppings total price.
   this.toppings.forEach((topping)=>{
     var tot = findPrice(topping, this.toppingsList);
     toppingsTotal += tot;
@@ -71,10 +76,10 @@ Order.prototype.show = function(){
 Order.prototype.get = function(id){
     return this.pizzas[id];
 }
-var topps1 = ['bacon', 'onions'];
-var topps2 = ['pepperoni', 'pineapples' 'sausage'];
-var mypiza = new Pizza('small', 'extracheese',topps1 );
-var mypiza2 = new Pizza('large', 'chilly',topps2);
+var topps1 = ['bacon', 'olives'];
+var topps2 = ['pepperoni', 'mushrooms', 'olives', 'sausage'];
+var mypiza = new Pizza('small', 'glutten',topps1 );
+var mypiza2 = new Pizza('large', 'crispy',topps2);
 
 var myOrder = new Order([mypiza, mypiza2]);
 
@@ -97,7 +102,7 @@ myOrder.show();
 
 $(document).ready(()=>{
 
-    $('.varieties').click(()=>{
+    $('.learn-more').click(()=>{
         $('html, body').animate({
             scrollTop: $(".about").offset().top
           }, 1000)
@@ -125,19 +130,19 @@ $(document).ready(()=>{
 
      //Section one handle the image toggle.
      $('.crispy-io').click(()=>{
-        $('.crispy-img').hide();
-        $('.extracheese-img').hide();
-        $('.chilly-img').show();
-    });
-    $('.stuffed-io').click(()=>{
-        $('.extracheese-img').hide();
-        $('.chilly-img').hide();
+        $('.stuffed-img').hide();
+        $('.glutten-img').hide();
         $('.crispy-img').show();
     });
-    $('.chilly-io').click(()=>{
-        $('.chilly-img').hide();
+    $('.stuffed-io').click(()=>{
+        $('.glutten-img').hide();
         $('.crispy-img').hide();
-        $('.extracheese-img').show();
+        $('.stuffed-img').show();
+    });
+    $('.glutten-io').click(()=>{
+        $('.stuffed-img').hide();
+        $('.crispy-img').hide();
+        $('.glutten-img').show();
     });
 
     $('.total-title').click(()=>{
@@ -178,7 +183,7 @@ $(document).ready(()=>{
         $('#small').prop('checked', false);
         $('#medium').prop('checked', false);
         $('#stuffed').prop('checked', false);
-        $('#chilly').prop('checked', false);
+        $('#glutten').prop('checked', false);
 
         var newPizza = new Pizza(selectedSize, selectedCrust, arr);
         allPizzas.push(newPizza);
