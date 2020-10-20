@@ -2,7 +2,7 @@
 This site allows users to customize and order pizza, 18/10/2020
 ### By Sheilla Njoroge
 ## Description
-A shopping page where user comes in, customizes the pizzas of their liking and orders, providing a delivery location for it to be delivered.
+A shopping site where user comes in, customizes the pizzas of their liking and orders, providing a delivery location for it to be delivered.
 
 ## Setup/Installation Requirements
 git clone

@@ -133,7 +133,7 @@ body{
     .about-text{
         margin-top: 10%;
     }
-    @media screen and (min-width: 300px) and (max-width: 900px){
+    @media screen and (min-width: 200px) and (max-width: 400px){
         .pizza{
             font-size: 1.5em;
         }
