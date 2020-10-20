@@ -8,7 +8,7 @@ A shopping site where user comes in, customizes the pizzas of their liking and o
 git clone
 cd /Pizza Inn
 ### Known Bugs
-There are no known bugs, if any, please contact the below details.
+There are no known bugs, if any, please contact the below contact details.
 
 ## Technologies Used
 HTML

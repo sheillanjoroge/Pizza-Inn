@@ -9,7 +9,7 @@ function Pizza(size, crust, toppings){
 Pizza.prototype.sizes = {
     small: 400,
     medium: 600,
-    large: 900
+    large: 950
 };
 Pizza.prototype.crusts = {
   crispy: 300,
