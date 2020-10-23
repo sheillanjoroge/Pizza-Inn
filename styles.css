@@ -1,6 +1,6 @@
 body{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .container-fluid{
     background-image: url('../images/bg.jpg');
@@ -10,7 +10,7 @@ body{
     opacity: .99;  
 }
 .title-bg{
-    background-color: black;
+    background-color: gray;
 }
 .title{
     font-size: 1.5em;
